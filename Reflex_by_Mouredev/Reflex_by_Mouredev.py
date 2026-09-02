@@ -5,4 +5,9 @@ import Reflex_by_Mouredev.styles.styles as styles
 app = rx.App(
     style=styles.BASE_STYLE
 )
-app.add_page(index)
+
+app.add_page(
+    index,
+    title="ErPica - Diseño y desarrollo WEB",
+    description="Hola, soy Antonio Martín y me dedico a ayudar a empresas a automatizar procesos."
+)
