@@ -11,25 +11,29 @@ def links() -> rx.Component:
             "Linkedin", 
             "CV extendido online", 
             "img/linkedin.svg",
-            "https://www.linkedin.com/in/antoniomapic/"
+            "https://www.linkedin.com/in/antoniomapic/",
+            "Botón de Linkedin"
         ),
         link_button(
             "GitHub", 
             "Portfolio de mis proyectos", 
             "img/github.svg",
-            "https://github.com/erpica"
+            "https://github.com/erpica",
+            "Botón de GitHub"
         ),
         link_button(
             "Vercel", 
             "", 
             "img/linkedin.svg",
-            ""
+            "",
+            "Botón de Vercel"
         ),
         link_button(
             "Netlify", 
             "", 
             "img/linkedin.svg",
-            ""
+            "",
+            "Botón de Netlify"
         ),
 
 
@@ -38,25 +42,29 @@ def links() -> rx.Component:
             "Brais Moure", 
             "Ingeniero de software y divulgador",
             "img/linkedin.svg",
-            "https://moure.dev/"
+            "https://moure.dev/",
+            "Botón de Brais Moure"
         ),
         link_button(
             "Miguel Ángel Durán", 
             "Ingeniero de Software y Creador de Contenido sobre Programación", 
             "img/linkedin.svg",
-            "https://midu.dev/"
+            "https://midu.dev/",
+            "Botón de Miguel Ángel Durán"
         ),
         link_button(
             "Vacante", 
             "", 
             "img/linkedin.svg",
-            ""
+            "",
+            "Botón de vacante"
         ),
         link_button(
             "Vacante", 
             "", 
             "img/linkedin.svg",
-            ""
+            "",
+            "Botón de vacante"
         ),
 
         title("Contacto:"),
@@ -64,7 +72,8 @@ def links() -> rx.Component:
             "Email", 
             styles.EMAIL,
             "img/linkedin.svg",
-            f"mailto:{styles.EMAIL}"
+            f"mailto:{styles.EMAIL}",
+            "Botón de contacto"
         ),
 
 

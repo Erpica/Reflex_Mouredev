@@ -1,6 +1,6 @@
 from enum import Enum
 import reflex as rx
-from .fonts import Font as Font
+from .fonts import Font, FontWeight
 from .colors import Color, TextColor
 
 # Constants
@@ -19,6 +19,12 @@ class Size(Enum):
 # Styles
 BASE_STYLE = {
     "font_family": Font.DEFAULT.value,
+    "font_weight": FontWeight.LIGHT.value,
+    rx.heading: {
+        "color": TextColor.HEADER.value,
+        "font_family": Font.TITLE.value,
+        "font_weight": FontWeight.MEDIUM.value,
+    },
     rx.button:{
         "width": "100%",
         "height": "100%",
@@ -34,6 +40,7 @@ BASE_STYLE = {
 
 navbar_title_style = dict(
     font_family=Font.LOGO.value,
+    font_weight = FontWeight.MEDIUM.value,
     font_size=Size.LARGE.value
 )
 
@@ -46,9 +53,10 @@ title_style = dict(
 
 button_tittle_style = dict(
     font_family = Font.TITLE.value,
+    font_weight = FontWeight.MEDIUM.value,
     font_size = Size.LARGE.value,
     color = Color.DARK.value,
-    font_weight="bold"
+    
 )
 
 button_body_style = dict(
@@ -60,3 +68,9 @@ button_body_style = dict(
 
 # Contact
 EMAIL = "antoniomartinpica@gmail.com"
+
+# Fonts
+STYLESHEETS = [
+    "https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap",
+    "https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap"
+]

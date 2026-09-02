@@ -13,7 +13,8 @@ def header() -> rx.Component:
                 bg_color=Color.LIGHT,
                 src="/img/foto_programar.png",
                 padding="2px",
-                border="4px"
+                border="4px",
+                alt="Foto portátil."
             ),
             rx.vstack(
                 rx.heading(
@@ -37,7 +38,11 @@ def header() -> rx.Component:
                 align="center",
                 spacing="0"
             ),
-
+            # Responsive: En móvil (primer valor) será columna, en escritorio (segundo valor) será fila.
+            direction=rx.breakpoints(initial="column", sm="row"),
+            spacing="4",
+            align="center",
+            width="100%"
             
         ),
 

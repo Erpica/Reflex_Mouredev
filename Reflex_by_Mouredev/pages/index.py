@@ -6,8 +6,8 @@ from Reflex_by_Mouredev.views.links.links import links
 import Reflex_by_Mouredev.styles.styles as styles
 from Reflex_by_Mouredev.styles.styles import Size as Size
 
-class State(rx.State):
-    pass
+#class State(rx.State):
+#    pass
 
 def index() -> rx.Component:
     return rx.box(
@@ -23,5 +23,6 @@ def index() -> rx.Component:
             ),
             width="100%"
         ),
-        footer()
+        footer(),
+        padding_x=Size.BIG.value
     )

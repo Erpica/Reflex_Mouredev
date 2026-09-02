@@ -14,3 +14,4 @@ class Color(Enum):
 class TextColor(Enum):
     LIGHT = "#FFFFFF"
     DARK = "#1A1A1A"
+    HEADER = "#0B3B60"

@@ -2,7 +2,7 @@ import reflex as rx
 import Reflex_by_Mouredev.styles.styles as styles
 from Reflex_by_Mouredev.styles.colors import Color as Color
 
-def link_button (tittle: str, body: str, image: str, url: str) -> rx.Component:
+def link_button (tittle: str, body: str, image: str, url: str, alt: str) -> rx.Component:
     return rx.link(
         rx.button(
             rx.hstack(
@@ -10,7 +10,8 @@ def link_button (tittle: str, body: str, image: str, url: str) -> rx.Component:
                     src=image, 
                     width=styles.Size.BIG.value,
                     height=styles.Size.BIG.value,
-                    margin=styles.Size.MEDIUM.value
+                    margin=styles.Size.MEDIUM.value,
+                    alt=alt
                 ),
                 rx.vstack(
                     rx.text(tittle, style=styles.button_tittle_style),

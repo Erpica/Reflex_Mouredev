@@ -7,7 +7,9 @@ def footer():
     return rx.hstack(
         rx.image(
             src="/img/barco.png",
-            height=Size.VERY_BIG.value
+            height=Size.VERY_BIG.value,
+            width=Size.VERY_BIG.value,
+            alt="Logotipo de un barco en el océano."
         ),
         rx.link(
             f"© {datetime.date.today().year} Antonio Martín Pica. ",
