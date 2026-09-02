@@ -1,0 +1,2 @@
+[tool.vercel]
+entrypoint = "Reflex_by_Mourdev.Reflex_by_Mourdev.app"
