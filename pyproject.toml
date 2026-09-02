@@ -1,2 +1,2 @@
 [tool.vercel]
-entrypoint = "Reflex_by_Mouredev.Reflex_by_Mouredev.app"
+entrypoint = "Reflex_by_Mouredev.Reflex_by_Mouredev:app"
